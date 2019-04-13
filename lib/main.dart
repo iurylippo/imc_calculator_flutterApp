@@ -27,7 +27,9 @@ class _HomeState extends State<Home> {
         ],
       ),
       backgroundColor: Colors.white,
-      body: Column(
+      body: SingleChildScrollView(
+        padding: EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 0.0),
+        child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Icon(
@@ -66,6 +68,7 @@ class _HomeState extends State<Home> {
             style: TextStyle(color: Colors.green, fontSize: 25.0),
           )
         ],
+      ),
       ),
     );
   }
